@@ -1,9 +1,17 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/autoplay";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const Blogs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Initialize AOS
+  }, []);
+
   const blogs = [
     {
       title: "University of Hertfordshire",
@@ -26,21 +34,32 @@ const Blogs = () => {
   ];
 
   return (
-    <section className="py-12 px-6 md:px-16">
+    <section className="py-12 px-6 md:px-16" data-aos="fade-up">
       {/* Heading */}
-      <h2 className="text-3xl font-semibold mb-6">Blogs</h2>
+      <h2
+        className="text-3xl font-semibold mb-6 text-center"
+        data-aos="fade-up"
+      >
+        Blogs
+      </h2>
 
       {/* Swiper Carousel */}
       <Swiper
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         spaceBetween={20}
         slidesPerView={1}
+        autoplay={{ delay: 3000, disableOnInteraction: false }} // Auto-slide every 3 sec
         className="w-full max-w-3xl"
+        data-aos="zoom-in" // Apply AOS to Swiper
       >
         {blogs.map((blog, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-gray-200 rounded-lg overflow-hidden shadow-md">
+            <div
+              className="bg-gray-200 rounded-lg overflow-hidden shadow-md"
+              data-aos="fade-up" // Animate each slide
+              data-aos-delay={index * 200} // Stagger effect
+            >
               <img
                 src={blog.image}
                 alt="Blog Image"
