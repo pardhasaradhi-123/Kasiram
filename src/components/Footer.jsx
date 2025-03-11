@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   useEffect(() => {
@@ -16,13 +17,10 @@ const Footer = () => {
           data-aos="fade-right"
         >
           <img
-            src="https://via.placeholder.com/150" // Replace with actual logo
+            src={logo} // Replace with actual logo
             alt="Kasiram Logo"
-            className="w-24 mb-2"
+            className="w-60 max-md:w-52 mb-2"
           />
-          <h2 className="text-lg font-bold uppercase">
-            Kasiram Overseas Educational Consultancy
-          </h2>
         </div>
 
         {/* Navigation Links */}

@@ -2,13 +2,18 @@ import { useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import usa from "../assets/CountriesProvide/usa.jpg";
+import canada from "../assets/CountriesProvide/canada.jpg";
+import uk from "../assets/CountriesProvide/uk.jpg";
+import australia from "../assets/CountriesProvide/australia.jpg";
+import germany from "../assets/CountriesProvide/germany.jpg";
 
 const countries = [
-  { id: 1, name: "USA", image: "https://via.placeholder.com/400" },
-  { id: 2, name: "Canada", image: "https://via.placeholder.com/400" },
-  { id: 3, name: "UK", image: "https://via.placeholder.com/400" },
-  { id: 4, name: "Australia", image: "https://via.placeholder.com/400" },
-  { id: 5, name: "Germany", image: "https://via.placeholder.com/400" },
+  { id: 1, name: "USA", image: usa },
+  { id: 2, name: "Canada", image: canada },
+  { id: 3, name: "UK", image: uk },
+  { id: 4, name: "Australia", image: australia },
+  { id: 5, name: "Germany", image: germany },
 ];
 
 const CountriesSection = () => {
@@ -55,7 +60,7 @@ const CountriesSection = () => {
               <img
                 src={country.image}
                 alt={country.name}
-                className="w-full h-64 object-cover rounded-lg shadow-lg"
+                className="w-full h-80 md:h-96 object-cover rounded-lg shadow-lg"
                 data-aos="zoom-in"
               />
               <h3
