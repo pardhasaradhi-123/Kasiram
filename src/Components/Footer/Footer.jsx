@@ -99,7 +99,7 @@ const Footer = () => {
                 </a>
               </span>
             </div>
-      
+      </section>
       </section>
     </div>
   );
