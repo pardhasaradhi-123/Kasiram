@@ -82,31 +82,32 @@ const Footer = () => {
           </div>
         </div>
         {/* Copyright Section */}
-       <div className="border-t border-gray-400 mt-8 py-6">
-        <div className="text-center space-y-2">
-      
-          <h4 className="text-gray-800 text-lg font-semibold tracking-wide">
-            © 2026 <span className="text-blue-800">Kasiram Overseas</span>
-          </h4>
-      
-          <p className="text-gray-600">
-            All Rights Reserved.
-          </p>
-      
-          <p className="text-sm text-gray-500">
-            Developed By{" "}
-            <a
-              href="https://crackdevelopers.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-red-600 hover:text-red-700"
-            >
-              crackdevelopers.com
-            </a>
-          </p>
-      
+       {/* Copyright Section */}
+        <div className="border-t border-blue-700 mt-8 py-6">
+          <div className="text-center space-y-2">
+        
+            <h4 className="text-white text-lg font-semibold tracking-wide">
+              © 2026 <span className="text-yellow-400">Kasiram Overseas</span>
+            </h4>
+        
+            <p className="text-blue-100">
+              All Rights Reserved.
+            </p>
+        
+            <p className="text-sm text-blue-200">
+              Developed by{" "}
+              <a
+                href="https://crackdevelopers.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-yellow-400 hover:text-yellow-300 transition"
+              >
+                crackdevelopers.com
+              </a>
+            </p>
+        
+          </div>
         </div>
-      </div>
       </section>
     </div>
   );
