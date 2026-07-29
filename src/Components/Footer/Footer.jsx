@@ -94,7 +94,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-white hover:text-red-400 font-semibold transition"
           >
-            crackdevelopers.com
+            crackdevelopers
           </a>
         </span>
       </section>
