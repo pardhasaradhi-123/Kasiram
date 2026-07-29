@@ -82,9 +82,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Copyright Section */}
-        <div className="mt-10 border-t border-gray-600 pt-4 text-center text-sm text-gray-300">
-        © 2025 Selva’s IAS Academy. All Rights Reserved.
-      <div className="mt-10 border-t border-gray-600 pt-4 text-center text-sm text-gray-300 flex flex-col gap-1">
+       <div className="mt-10 border-t border-gray-600 pt-4 text-center text-sm text-gray-300 flex flex-col gap-1">
         <span>© 2026 Kasiram Overseas | Empowering Global Education. All Rights Reserved.</span>
         <span>
           Developed By{" "}
